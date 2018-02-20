@@ -1,220 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>In N Out- Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-  body {
-      font: 400 15px Lato, sans-serif;
-      line-height: 1.8;
-      color: #818181;
-  }
-  h2 {
-      font-size: 24px;
-      text-transform: uppercase;
-      color: #303030;
-      font-weight: 600;
-      margin-bottom: 30px;
-  }
-  h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      color: #303030;
-      font-weight: 400;
-      margin-bottom: 30px;
-  }  
-  .jumbotron {
-      background-color: #C81200;
-      color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-      padding: 60px 50px;
-  }
-  .bg-grey {
-      background-color: #f6f6f6;
-  }
-  .logo-small {
-      color: #f4511e;
-      font-size: 50px;
-  }
-  .logo {
-      color: #f4511e;
-      font-size: 200px;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
-      margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-      background-image: none;
-      color: #f4511e;
-  }
-  .carousel-indicators li {
-      border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-      background-color: #f4511e;
-  }
-  .item h4 {
-      font-size: 19px;
-      line-height: 1.375em;
-      font-weight: 400;
-      font-style: italic;
-      margin: 70px 0;
-  }
-  .item span {
-      font-style: normal;
-  }
-  .panel {
-      border: 1px solid #f4511e; 
-      border-radius:0 !important;
-      transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-      border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
-  }
-  .panel-heading {
-      color: #fff !important;
-      background-color: #f4511e !important;
-      padding: 25px;
-      border-bottom: 1px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: white !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: #aaa;
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: #f4511e;
-      color: #fff;
-  }
-  .navbar {
-      margin-bottom: 0;
-      background-color: white;
-      z-index: 9999;
-      border: 0;
-      font-size: 12px !important;
-      line-height: 1.42857143 !important;
-      letter-spacing: 4px;
-      border-radius: 0;
-      font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-      color: #B80815 !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #B80815 !important;
-      background-color: yellow !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-      color: #fff !important;
-  }
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-      animation-name: slide;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
+  <title>Home- In n Out</title>
+	 <link rel="stylesheet" href="website2.css">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    clear: both;
+    display: block;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.aside {
+    background-color: red;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+     height: 400px
+}
+.footer {
+    background-color: red;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
         width: 100%;
-        margin-bottom: 35px;
     }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-  </style>
+}
+</style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">In N Out Burger</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">HOME</a></li>
-        <li><a href="menu.html">MENU</a></li>
-        <li><a href="history.html">HISTORY</a></li>
-       <li><a href="contact.html">CONTACT</a></li>
-      </ul>
-    </div>
+<div class="header">
+  <center><h1>In n Out Burger</h1></center>
+</div>
+
+<div class="row">
+
+
+<<div class="col-3 menu">
+  <ul>
+    <b><li><center>Home<br><img src="https://i.pinimg.com/170x/3a/b8/af/3ab8afb2c9b69b37da9060c6876eb0e2--great-restaurants-fast-foods.jpg" style="border-color:yellow; border-style: solid;
+    border-width: 3px;"></br></center></li></b></a>
+   
+    <a href="Menu.html"><b><li><center>Menu<br><img src="https://i.pinimg.com/474x/92/f7/b7/92f7b76ff0c6f25d3a91607047b086a8.jpg" style="border-color:yellow; border-style: solid;
+    border-width: 3px;"></br></center></li></b></a>
+    
+   <a href="History.html"><b><li><center>History<br><img src="https://i.pinimg.com/170x/6a/ee/db/6aeedb4e052d83f64fb86cf8b9095da8.jpg" style="border-color:yellow; border-style: solid;
+    border-width: 3px;"></br></center></li></b></a>
+    
+   <a href="Aboutus.html"> <b><li><center>Contact Us<br><img src="https://i.pinimg.com/170x/fd/b8/06/fdb8064ad4ab08b8304a09ad8a156993--best-burger-restaurants-restaurant-logos.jpg" style="border-color:yellow; border-style: solid;
+    border-width: 3px;"></br></center></li></b></a>
+  </ul>
+</div>
+
+<div class="col-6">
+  <center>
+  	
+<div id="menuimages">
+   <img src="https://i2.wp.com/lebihbaik.newstipsindonesia.com/wp-content/uploads/2017/05/outburger.jpg?resize=300%2C200" style="border-color:yellow; border-style: solid;
+    border-width: 5px;">
+
+ <img src="http://i1.wp.com/ytimg.googleusercontent.com/vi/lY1fRP7qICU/mqdefault.jpg" style="border-color:red; border-style: solid;
+    border-width: 5px;">
+</div>
+
+  <img src="http://www.trendengel.com/wp-content/uploads/2017/04/employment_slideshow3-500x192.png" style="border-color:yellow; border-style: solid;
+    border-width: 5px;">
+</div>
+</div>
+</center>
+
+<div class="col-3 right">
+  <div class="aside" style="border-color:yellow; border-style: solid;
+    border-width: 7px;">
+    <h2>Quality you can taste</h2>
+    <p>From the first bite of your burger to your last french fry, quality is the most important ingredient at In-N-Out Burger. We don’t freeze, pre-package or microwave our food.
+
+We make things the old-fashioned way.</p>
+
+<center><img src="https://i.pinimg.com/170x/60/80/aa/6080aa432c8b6562353be95a52f5a40a.jpg" style="border-color:yellow; border-style: solid;
+    border-width: 3px;"></center>
+    
   </div>
-</nav>
+</div>
 
-<div class="jumbotron text-center">
-  <h1><img src="https://is1-ssl.mzstatic.com/image/thumb/Purple5/v4/27/63/58/27635820-8270-688e-cdfc-3948bd5f5785/mzl.mqelefta.png/1200x630bb.jpg" class="img-circle" style=" width: 300px; height:300px; border-color: yellow; border-style: solid; border-width: 5px"></h1>
-  <b><h3 style="font-family: Courier New, Monospace">Quality you can taste</h3> </b>
-  <p style="font-family: Courier New, Monospace">From the first bite of your burger to your last french fry, quality is the most important ingredient at In-N-Out Burger. We don’t freeze, pre-package or microwave our food.</p>
-  <form>
+</div>
+<div class="col-12 footer">
+
+<div class="footer">
+
+</div>
+</div>
+
+</body>
+<br>
+</html>
+
